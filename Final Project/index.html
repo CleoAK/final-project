@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+<!-- The Modal -->
+<div id="storyModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Out Story</h2>
+    <p>Dressed By started in 2021 for a Front End Web Development course for General Assembly Australia. Founder and Creative Director, C K, wanted to replicate a e-commerce store for her final assignment. A few stock images plus some late night googling and voila! Dressed By was born.</p>
+  </div>
+</div>
+ 
+<!-- The Modal -->
+<div id="alterationModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Services</h2>
+        <p>We customise your gown to your perfect size! Alteration services include,</p>
+        <ul>
+            <li>Hem</li>
+            <li>Sleeve Shortening</li>
+        </ul>
+    </div>
+</div>
+
+<button onclick="topFunction()" id="upBtn" title="Go to top">&#8593;</button>
+
+    <header>
+        <nav>
+            <ul class="navigation">
+                <li class="smooth">
+                    <a href="#nav-range">Range</a>
+                </li>
+                <li class="smooth">
+                    <a href="#nav-alterations">Alterations</a>
+                </li>
+                <li class="smooth">
+                    <a href="#nav-contact-us">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="parallax" id="about-section">
+                <h2 class="brand">Dressed By</h2>
+                <div class="background">
+                    <div class="tagline">
+                        <p>Dressed By is your ultimate closet from day ware to evening. Find the perfect outfit and customise your fit with our in-house alteration service.</p>
+                    </div>
+                </div>
+                <button id="storyBtn">Our Story ></button>
+    </section>
+    <main id="nav-range">
+        <h2>Range</h2>
+        <div class="catalogue">
+            <ul>
+                <li class="container">
+                    <img src="./images/catalogue-one.jpg" alt="Image 1">
+                    <div class="overlay">
+                        <div class="text">Jessica Dress $80</div>
+                      </div>
+                </li>
+                <li class="container">
+                    <img src="./images/catalogue-two.jpg" alt="Image 2">
+                    <div class="overlay">
+                        <div class="text">Lauren Dress $95</div>
+                      </div>
+                </li>
+                <li class="container">
+                    <img src="./images/catalogue-three.jpg" alt="Image 3">
+                    <div class="overlay">
+                        <div class="text">Alyssa Dress $110</div>
+                      </div>
+                </li>
+            </ul>
+        </div>
+
+    </main>
+
+    <article class="alterations-article" id="nav-alterations">        
+        <h2 class="alt-heading">Alterations</h2>
+        <div class="background">
+            <div class="altsummary">
+                <p>At Dressed By we provide instore alteration service to make sure you walk away with the perfect fit.</p>
+            </div>
+        </div>
+        <button id="alterationBtn">Services</button>
+    </article>
+    <section class="contact-us-section">
+        <section id="nav-contact-us">
+            <h2 class="contact-heading">Contact Us</h2>
+            <ul class="contact-information">
+                <li>
+                    <h5>Address</h5>
+                    <p>1 Market Street, Sydney NSW 2000</p>
+                </li>
+                <li>
+                    <h5>Opening Hours</h5>
+                    <ul class="opening-hours">
+                        <li>Monday - Wednesday: 9am-5pm</li>
+                        <li>Thursday: 9am-9pm</li>
+                        <li>Friday - Saturday: 9am-4pm</li>
+                        <li>Sunday: CLOSED</li>
+                    </ul>
+                </li>
+                <li>
+                    <h5>Telephone</h5>
+                    <p>(02) 8234 3948</p>
+                </li>
+                <li>
+                    <h5 id="mailing-list">Join Our Mailing List!</h5>
+                    <form name="submit-to-google-sheet">
+                        <input name="email" type="email" placeholder="Email" required>
+                        <input name="name" type="text" placeholder="Full Name">
+                        <button class="mailing-list-button">Submit</button>
+                    </form>
+                </li>
+            </ul> 
+        </section>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.7156208751517!2d151.20231971462087!3d-33.87121908065554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae3eca8c3eed%3A0x9d3657f789cd55b8!2s1%20Market%20St%2C%20Sydney%20NSW%202000!5e0!3m2!1sen!2sau!4v1617613776333!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+    <footer>
+        <h5>&#169; Dressed By 2021</h5>
+        <nav>
+            <ul class="socials">
+              <li>
+                <a class="instagram" href="https://www.instagram.com/"><img src="./images/instagram.png" alt="Instagram"></a>
+              </li>
+              <li class="facebook">
+                <a href="https://facebook.com"><img src="./images/facebook.png" alt="Facebook"></a>
+              </li>
+            </ul>
+          </nav>
+    </footer>
+    <script src="main.js"></script>
+    
+</body>
+</html>
